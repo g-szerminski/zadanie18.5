@@ -45,13 +45,13 @@ module.exports = {
             sourceMap: false
         })
     ],
-};
 
-devServer: {
-    proxy: {
-        '/socket.io': {
-            target: 'http://localhost:3000',
-            ws: true
+    devServer: {
+        proxy: {
+            '/socket.io': {
+                target: 'http://localhost:3000',
+                ws: true
+            }
         }
     }
-}
+};
